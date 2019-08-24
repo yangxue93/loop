@@ -1,0 +1,43 @@
+{
+    "name": "yangxue93/loop",
+    "description": "loop",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "yangxue",
+            "email": "1284776849@qq.com"
+        }
+    ],
+    "require": {
+    },
+    "require-dev": {
+    },
+    "autoload": {
+        "psr-4": {
+            "Yangxue93\\Loop\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+        },
+        "classmap": [
+        ]
+    },
+    "scripts": {
+        "test": "./vendor/bin/phpunit"
+    },
+    "suggest": {
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Yangxue93\\Loop\\LoopServiceProvider"
+            ]
+
+        }
+    }
+}

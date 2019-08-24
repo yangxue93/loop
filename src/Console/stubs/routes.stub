@@ -1,0 +1,18 @@
+<?php
+
+use Illuminate\Routing\Router;
+
+
+Route::group([
+    'prefix'        => config('loop.route.prefix'),
+    'namespace'     => config('loop.route.namespace'),
+    'middleware'    => config('loop.route.middleware'),
+], function (Router $router) {
+
+    $router->get('/a', function () {
+        return 'loop';
+    });
+    $router->get('/', 'API\Loop\LoopController@test');
+
+
+});
