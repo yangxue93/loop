@@ -11,7 +11,7 @@ use function Psy\bin;
 class LoopController
 {
     public function test(){
-        echo 'tttt';die;
+        echo 'test packages';die;
     }
     public function getLoopImg(){
         $loop_img_info = DB::table('loop_img')
